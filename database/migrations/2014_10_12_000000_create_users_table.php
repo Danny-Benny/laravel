@@ -20,6 +20,12 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        DB::table('users')->insert([
+            'name' => 'John Doe',
+            'email' => 'test@example.com',
+            'password' => '$2y$10$QvtJ9bd7A0zOKP/t3xLqqeyqFf0NIBbgHuslgCbwBIvg47C3dBqHe',
+        ]);
     }
 
     /**
