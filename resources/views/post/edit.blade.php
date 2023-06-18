@@ -20,7 +20,7 @@
                             <label for="content">Content</label><br>
                             <textarea class="form-control" name="content" id="content">{{old('content', $post->content)}}</textarea>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded mt-2" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
